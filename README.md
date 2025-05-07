@@ -17,16 +17,23 @@ LightSwap demonstrates how ZK compression makes Solana transactions lighter and 
 
 ## Quick Start
 
+### Clone and install
+
 \`\`\`bash
-# Clone and install
 git clone https://github.com/yourusername/lightswap.git
 cd lightswap
 npm install
+\`\`\`
 
-# Set up environment
+### Set up environment
+
+\`\`\`bash
 echo "NEXT_PUBLIC_SOLANA_RPC_URL=https://api.devnet.solana.com" > .env.local
+\`\`\`
 
-# Run development server
+### Run development server
+
+\`\`\`bash
 npm run dev
 \`\`\`
 

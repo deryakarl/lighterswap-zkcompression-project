@@ -44,6 +44,8 @@ Visit [http://localhost:3000](http://localhost:3000) to see the app.
 ```
 ## Usage
 
+PLEASE use Chrome for wallet connect
+
 1. Connect your wallet (set to Devnet)
 2. Select tokens to swap
 3. Enter amount

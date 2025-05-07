@@ -1,6 +1,6 @@
 # LightSwap
 
-A minimalist token swap interface for Solana with ZK compression.
+
 
 ![LightSwap Screenshot](https://sjc.microlink.io/Fh_-S6f30O_4IpYbq_ZGtuir82LgEmGmyeuPIj92804LHSOeu_bv8gHJtn5tMeowNbgq8i7Oww4mGINOerFx1g.jpeg)
 
@@ -19,23 +19,21 @@ LightSwap demonstrates how ZK compression makes Solana transactions lighter and 
 
 ### Clone and install
 
-\`\`\`bash
+/
 git clone https://github.com/yourusername/lightswap.git
 cd lightswap
 npm install
-\`\`\`
+
 
 ### Set up environment
 
-\`\`\`bash
-echo "NEXT_PUBLIC_SOLANA_RPC_URL=https://api.devnet.solana.com" > .env.local
-\`\`\`
+echo "RPC URL=https://api.devnet.solana.com" > .env.local
 
 ### Run development server
 
-\`\`\`bash
+
 npm run dev
-\`\`\`
+
 
 Visit [http://localhost:3000](http://localhost:3000) to see the app.
 
@@ -50,9 +48,15 @@ Visit [http://localhost:3000](http://localhost:3000) to see the app.
 ## Technologies
 
 - **Frontend**: Next.js, React, Tailwind CSS
-- **Blockchain**: Solana Web3.js, SPL Token
+- **Blockchain**: Solana Web3.js, Rust
 - **Wallet**: Solana Wallet Adapter
-- **Compression**: Light Protocol (simulated)
+- **Compression**:ZK Compression Light Protocol
+
+ ## Resources
+
+- [ZK Compression Documentation](https://www.zkcompression.com/developers/addresses-and-urls)
+- [Solana Explorer](https://explorer.solana.com/?cluster=devnet)
+- [Helius RPC Documentation](https://docs.helius.dev/)
 
 ## License
 

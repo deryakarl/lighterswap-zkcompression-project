@@ -1,104 +1,52 @@
 # LightSwap
 
-A minimalist token swap interface for Solana, demonstrating the power of ZK compression.
+A minimalist token swap interface for Solana with ZK compression.
 
 ![LightSwap Screenshot](https://sjc.microlink.io/Fh_-S6f30O_4IpYbq_ZGtuir82LgEmGmyeuPIj92804LHSOeu_bv8gHJtn5tMeowNbgq8i7Oww4mGINOerFx1g.jpeg)
 
-## Live Demo
+## Overview
 
-Check out the live demo at [lightswap.vercel.app](https://lightswap.vercel.app/)
+LightSwap demonstrates how ZK compression makes Solana transactions lighter and more efficient. Swap tokens with up to 98% reduction in transaction fees through zero-knowledge proofs.
 
-## Project Overview
+## Features
 
-LightSwap is a demonstration of how ZK compression can make Solana transactions lighter and more efficient. The application provides a clean, intuitive interface for swapping tokens on Solana with ZK compression enabled.
+- **ZK Compression**: Toggle compression on/off to see the difference
+- **Token Swaps**: Exchange SOL, USDC, and BONK on Solana devnet
+- **Wallet Integration**: Connect with Phantom, Solflare, or other Solana wallets
+- **Transaction History**: Track your swaps with detailed compression metrics
 
-## Development Journey
-
-Here's how we built LightSwap step by step:
-
-### 1. Project Setup
-
-- Created a Next.js application with TypeScript
-- Set up Tailwind CSS for styling
-- Configured environment variables for Solana RPC endpoints
-- Added necessary dependencies for Solana web3.js and SPL tokens
+## Quick Start
 
 \`\`\`bash
-npx create-next-app@latest lightswap --typescript
-
+# Clone and install
+git clone https://github.com/yourusername/lightswap.git
 cd lightswap
-npm install @solana/web3.js @solana/spl-token
+npm install
+
+# Set up environment
+echo "NEXT_PUBLIC_SOLANA_RPC_URL=https://api.devnet.solana.com" > .env.local
+
+# Run development server
+npm run dev
 \`\`\`
 
-### 2. UI Components Development
+Visit [http://localhost:3000](http://localhost:3000) to see the app.
 
-- Designed a clean, dark-themed UI with a focus on simplicity
-- Created the token selector component with token icons and balances
-- Implemented the swap interface with from/to fields
-- Added slippage tolerance settings (0.1%, 0.5%, 1%, Custom)
-- Built the transaction history component
-- Designed the wallet connection button
+## Usage
 
-### 3. Solana Integration
+1. Connect your wallet (set to Devnet)
+2. Select tokens to swap
+3. Enter amount
+4. Toggle ZK compression on/off
+5. Click "Swap"
 
-- Set up Solana connection utilities
-- Implemented wallet adapter integration
-- Created token balance fetching functionality
-- Added SOL and USDC token data
+## Technologies
 
-### 4. ZK Compression Implementation
-
-- Added ZK compression toggle
-- Implemented mock ZK compression client for demonstration
-- Created compression visualization utilities
-- Added transaction simulation with compression metrics
-
-### 5. Swap Functionality
-
-- Implemented token swap logic
-- Added slippage calculation
-- Created transaction building utilities
-- Implemented swap confirmation flow
-- Added success/error handling
-
-## Key Features
-
-- **ZK Compression Toggle**: Enable/disable ZK compression for transactions
-- **Token Selection**: Swap between SOL and USDC (demo tokens)
-- **Slippage Settings**: Customize slippage tolerance
-- **Wallet Connection**: Connect to Solana wallets
-- **Devnet Support**: Test on Solana devnet
-
-
-### Integration
-
-- **Solana Connection**: Web3.js for Solana blockchain interaction
-- **Wallet Adapter**: Solana wallet adapter for wallet connections
-- **Token Handling**: SPL Token library for token operations
-- **ZK Compression**: Custom implementation for demonstration
-
-
-## Future Improvements
-- Add more token pairs
-- Implement real swap functionality with Jupiter or other DEX aggregators
-- Add transaction confirmation and details view
-- Implement token search functionality
-- Add price impact warnings
-
-
-   ## Resources
-
-- [ZK Compression Documentation](https://www.zkcompression.com/developers/addresses-and-urls)
-- [Solana Explorer](https://explorer.solana.com/?cluster=devnet)
-- [Helius RPC Documentation](https://docs.helius.dev/)
+- **Frontend**: Next.js, React, Tailwind CSS
+- **Blockchain**: Solana Web3.js, SPL Token
+- **Wallet**: Solana Wallet Adapter
+- **Compression**: Light Protocol (simulated)
 
 ## License
 
 MIT
-\`\`\`
-
-This README provides a comprehensive overview of how we built the LightSwap demo application, including the step-by-step development process, key features, technical implementation details, and the project structure. It also includes information about the animation we implemented to visualize the "Solana is now Lighter" concept.
-
-The document is structured to be easy to follow for developers who want to understand how the application was built or contribute to it in the future.
-
-

@@ -27,10 +27,12 @@ npm install
 
 
 ### Set up environment
-```bash
-echo "RPC URL=https://api.devnet.solana.com" > .env.local
-```
 by Helius Devnet RPC Endpoint
+
+```bash
+echo "RPC URL=https://api.devnet.solana.com"
+```
+
 
 ### Run development server
 
@@ -63,4 +65,4 @@ Visit [http://localhost:3000](http://localhost:3000) to see the app.
 
 ## License
 
-MIT
+MIT Licence

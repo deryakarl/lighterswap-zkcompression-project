@@ -18,24 +18,28 @@ LightSwap demonstrates how ZK compression makes Solana transactions lighter and 
 
 ### Clone and install
 
-/
-git clone https://github.com/yourusername/lightswap.git
+```bash
+git clone https://github.com/handle/lightswap.git
 cd lightswap
 npm install
+```
+
 
 
 ### Set up environment
-
+```bash
 echo "RPC URL=https://api.devnet.solana.com" > .env.local
+```
+by Helius Devnet RPC Endpoint
 
 ### Run development server
 
-
+```bash
 npm run dev
-
-
+```
+```bash
 Visit [http://localhost:3000](http://localhost:3000) to see the app.
-
+```
 ## Usage
 
 1. Connect your wallet (set to Devnet)
